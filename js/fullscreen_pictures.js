@@ -48,10 +48,10 @@ const initComments = (comments) => {
     renderComment(comment);
   }
   let initNumber;
-  if (comments.length > 3) {
-    initNumber = 3;
+  if (comments.length > 5) {
+    initNumber = 5;
     loaderComments.classList.remove('hidden');
-    countComments.textContent = `3 из ${comments.length} комментариев`;
+    countComments.textContent = `5 из ${comments.length} комментариев`;
   } else {
     initNumber = comments.length;
     loaderComments.classList.add('hidden');
